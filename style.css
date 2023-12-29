@@ -1,0 +1,442 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin : 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    /* this is so when we add links to our website it does not go directly below rather it goes in smooth manner */
+
+}
+
+a , .btn{
+    transition: all 300ms ease;
+}
+
+nav , .nav_links{
+    display: flex;
+    /* this is used to put the items in a flexbox so that they can be put side by side */
+}
+
+nav{
+    justify-content: space-around;
+    /* this property will basically give space around items */
+    align-items: center;
+    height: 17vh;
+    /* one whole page is consider as 100 view height(vh) , so first 18 vh is given to this nav and in this 18 it will be aligned at half */
+}
+
+.nav_links{
+    list-style: none;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover{
+    color: grey;
+    text-decoration: underline;
+    font-size: smaller;
+    transition: transform 3s smooth;
+    text-underline-offset: 1rem;
+    /* transform: scale(1.5); */
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.logo:hover{
+    cursor: default;
+}
+
+
+/* hamburger menu */
+
+#hamburger_nav{
+    display: none;
+}
+
+.hamburger_menu{
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger_icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger_icon span{
+    background-color: black;
+    width: 100%;
+    height: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu_link{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content ; 
+    max-height: 0;
+    /* due to this max height we are able to hide the content of that drop down */
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu_link a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu_link li{
+    list-style: none;
+}
+
+.menu_link.open{
+    max-height: 300px;
+}
+
+.hamburger_icon.open span:first-child{
+    transform: rotate(45deg) translate(10px , 5px);
+}
+.hamburger_icon.open span:nth-child(2){
+    opacity: 0;
+}
+.hamburger_icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px , -5px);
+}
+
+.hamburger-icon span:first-child{
+    transform: none;
+}
+.hamburger-icon span:first-child{
+    opacity: 1;
+}
+.hamburger-icon span:first-child{
+    transform: none;
+}
+
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section_container{
+    display: flex;
+}
+/* Profile section */
+
+#profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section_pic_container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section_pic_container:hover{
+    cursor: pointer;
+}
+.section_text{
+    align-self: center;
+    text-align: center;
+}
+
+.section_text p{
+    font-weight: 600;
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+.section_container{
+    display:flex;
+}
+
+.section_text1{
+    text-align:center;
+}
+
+
+.section_text3{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.section_text2{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#socials_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* buttons */
+
+.btn_container{
+    display:flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.button{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.one , .two{
+    border: rgb(53 , 53 , 53) 0.1rem solid;
+}
+
+.one:hover , .two:hover{
+    cursor: pointer;
+}
+
+.one:hover , .two{
+    background: rgb(53 , 53 , 53);
+    color: white;
+}
+
+.two:hover{
+    background: rgb(0,0,0);
+}
+
+.one{
+    background: none;
+}
+
+.one:hover{
+    border: rgb(255,255,255) 0.1rem solid;
+}
+
+.btn_container{
+    gap: 1rem;
+}
+
+/* About section */
+
+#about{
+    position: relative;
+}
+
+.about_container , .about_details_container{
+    display:flex;
+}
+
+.about_container{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about_details_container{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about_pic{
+    border-radius: 2rem;
+}
+
+
+.details_container{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53 , 53 , 53) 0.1rem solid;
+    border-color: rgb(163 , 163 , 163);
+    text-align: center;
+}
+
+.section_container{
+    gap: 4rem;
+    height: 80%;
+}
+
+.section_pic_container{
+    height: 400px;
+    width: 400;
+    margin: auto 0;
+}
+
+
+.arrow1{
+    position: absolute;
+    right : -5rem;
+    bottom : 2.5rem;
+}
+
+.arrow2{
+    position: absolute;
+    right: -5rem;
+    top: 2.5rem;
+}
+
+
+/* Experience Section */
+
+#experience{
+    position: relative;
+}
+
+.experience_subtitle{
+    color: rgb(85 , 85 , 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience_details_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article_container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2.5rem;
+}
+
+article{
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+article .icon{
+    cursor: default;
+}
+
+#projects{
+    position: relative;
+}
+
+.project_img{
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.color_container{
+    border-radius: 6rem;
+    border-color: rgb(163 , 163 , 163);
+    background: rgb(250 , 250 , 250);
+    transition: transform 0.3s ease-in-out;
+}
+
+.color_container:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.project_subtitle{
+    margin: 1rem;
+    color: black;
+}
+
+.project_btn{
+    color: black;
+    border-color: rgb(163 , 163 , 163);
+}
+
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contatc_info_upper_container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53 , 53 , 53) 0.1rem solid;
+    border-color: rgb(163 , 163 , 163);
+    background: (250,250,250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+    gap: 1rem;
+}
+
+.contact_info_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact_info_container p{
+    font-size: larger;
+}
+
+.contact_icon{
+    cursor: default;
+}
+
+.email_icon{
+    height: 2.5rem;
+}
+
+/* footer section */
+
+footer{
+    height: 26vh;
+    margin: 0;
+}
+
+footer p{
+    text-align: center;
+}

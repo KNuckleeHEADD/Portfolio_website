@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id = "desktop_nav"> 
+        <!-- nav basically stands for navigation window and is used to put all the links at one point -->
+        <div class = "logo">Gourav</div>
+        <!-- difference betweeen class and id attribute is class is used to identify or style various things at once whereas id is more of a unique type of thing -->
+        <div>
+            <ul class="nav_links">
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#experience">Experience</a></li>
+                <li><a href = "#projects">Projects</a></li>
+                <li><a href = "#contact">Contact Me</a></li>
+            </ul>
+            <button class = "dark">dark</button>
+        </div>
+    </nav>
+
+    <nav id="hamburger_nav">
+        <div class = "logo">Gourav</div>
+        <div class = "hamburger_menu">
+            <div class = "hamburger_icon" onclick = "toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class = "menu_link">
+                <li><a href = "#about" onclick = "toggleMenu()">About</a></li>
+                <li><a href = "#experience" onclick = "toggleMenu()">Experience</a></li>
+                <li><a href = "#projects" onclick = "toggleMenu()">Projects</a></li>
+                <li><a href = "#contact me" onclick = "toggleMenu()">Contact Me</a></li> 
+            </div>
+        </div>
+    </nav>
+    <section id = "profile">
+        <div class = "section_pic_container">
+            <img src = "moyemoye.jpg" alt = "Moye Moye">
+        </div>
+        <div class = "section_text">
+            <p class = "section_text1">Hello I'm</p>
+            <h1 class = "section_text2">Gourav Subnani</h1>
+            <p class = "section_text3">moye moye</p>
+            <div class = "btn_container">
+                <button class = "button one" onclick = "window.open('myresume.pdf')">
+                    Downlaod CV
+                </button>
+                <button class = "button two" onclick = "location.href='./#contact'">
+                    Contact
+                </button>
+            </div>
+            <div id = "socials_container">
+                <img src = "linkedin.png" alt = "Linked profile" class = "icon"
+                onclick = "location.href = 'https://www.linkedin.com/in/gourav-subnani-9925b71b5/'">
+                <img src = "github.png" alt = "Github profile" class = "icon"
+                onclick = "location.href = 'https://github.com/KNuckleeHEADD'">
+            </div>
+        </div>
+    </section>
+    <section id = "about">
+        <img src = "up-arrow.png" alt = "up arrow icon" class = "icon arrow2" onclick = "location.href = '#'">
+       <p class = "section_text1">Get to Know More</p>
+       <h1 class = "section_text2">About Me</h1> 
+       <div class = "section_container">
+            <div class = "section_pic_container">
+                <img src = "moyemoye.jpg" alt = "My Image" class = "about_pic">
+            </div>
+            <div class = "about_details_container">
+                <div class = "about_container">
+                    <div class = "details_container d1">
+                        <img src = "experience.png" alt = "Experience icon" class = "icon">
+                        <h3>Experience</h3>
+                        <p>0 years
+                        <br>
+                        Frontend Development
+                        </p>
+                    </div>
+                    <div class = "details_container">
+                        <img src = "education.png" alt = "Education icon" class = "icon">
+                        <h3>Education</h3>
+                        <p>Bachelors of Engineering
+                        <br>
+                        Information science Engineering
+                        </p>
+                    </div>
+                </div>
+                <div class = "text_container">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni dolorum deserunt asperiores tempore explicabo, molestias illum facere sunt, iure sequi, nihil corrupti doloribus. Quis a dicta animi mollitia modi molestias.</p>
+                </div>
+            </div>
+       </div>
+       <img src = "arrow.png" alt = "down arrow icon" class = "icon arrow1" onclick = "location.href = '#experience'">
+    </section>
+    <section id = "experience">
+        <img src = "up-arrow.png" alt = "up arrow icon" class = "icon arrow2" onclick = "location.href = '#about'">
+        <p class = "section_text1">Explore My</p>
+        <h1 class = "section_text2">Experience</h1>
+        <div class = "experience_details_container">
+            <div class = "about_container">
+                <div class = "details_container">
+                    <h2 class = "experience_subtitle">Frontend Development</h2>
+                    <div class = "article_container">
+                        <article>
+                            <img src = "checkmark.png" alt = "Experience Icon" class = "icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src = "checkmark.png" alt = "Experience Icon" class = "icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src = "checkmark.png" alt = "Experience Icon" class = "icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src = "checkmark.png" alt = "Experience Icon" class = "icon">
+                            <div>
+                                <h3>C++</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src = "checkmark.png" alt = "Experience Icon" class = "icon">
+                            <div>
+                                <h3>React JS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src = "checkmark.png" alt = "Experience Icon" class = "icon">
+                            <div>
+                                <h3>NODE JS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class = "details_container">
+                    <h2 class = "experience_subtitle">Frontend Development</h2>
+                    <div class = "article_container">
+                        <article>
+                            <img src = "checkmark.png" alt = "Experience Icon" class = "icon">
+                            <div>
+                                <h3>Express JS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src = "checkmark.png" alt = "Experience Icon" class = "icon">
+                            <div>
+                                <h3>Github</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src = "checkmark.png" alt = "Experience Icon" class = "icon">
+                            <div>
+                                <h3>SASS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src = "checkmark.png" alt = "Experience Icon" class = "icon">
+                            <div>
+                                <h3>Vue JS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src = "arrow.png" alt = "down arrow icon" class = "icon arrow1" onclick = "location.href = '#projects'">
+    </section>
+    <section id = "projects">
+        <img src = "up-arrow.png" alt = "up arrow icon" class = "icon arrow2" onclick = "location.href = '#experience'">
+        <p class = "section_text1">Browse My Recent</p>
+        <h1 class = "section_text2">Projects</h1>
+        <div class = "experience_details_container">
+            <div class = "about_container">
+                <div class = "details_container color_container">
+                    <div class = "article_container">
+                        <img src = "project-1.png" alt = "project 1" class = "project_img">
+                    </div>
+                    <h2 class = "experience_subtitle project_subtitle">Project one</h2>
+                    <div class = "btn_container">
+                        <button class = "button one project_btn" onclick = "location.href = 'https://github.com/KNuckleeHEADD'">Github</button>
+                        <button class = "button one project_btn" onclick = "location.href = 'https://github.com/KNuckleeHEADD'">Live Demo</button>
+                    </div>
+                </div>
+                <div class = "details_container color_container">
+                    <div class = "article_container">
+                        <img src = "project-2.png" alt = "project 2" class = "project_img">
+                    </div>
+                    <h2 class = "experience_subtitle project_subtitle">Project two</h2>
+                    <div class = "btn_container">
+                        <button class = "button one project_btn" onclick = "location.href = 'https://github.com/KNuckleeHEADD'">Github</button>
+                        <button class = "button one project_btn" onclick = "location.href = 'https://github.com/KNuckleeHEADD'">Live Demo</button>
+                    </div>
+                </div>
+                <div class = "details_container color_container">
+                    <div class = "article_container">
+                        <img src = "project-3.png" alt = "project 3" class = "project_img">
+                    </div>
+                    <h2 class = "experience_subtitle project_subtitle">Project three</h2>
+                    <div class = "btn_container">
+                        <button class = "button one project_btn" onclick = "location.href = 'https://github.com/KNuckleeHEADD'">Github</button>
+                        <button class = "button one project_btn" onclick = "location.href = 'https://github.com/KNuckleeHEADD'">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src = "arrow.png" alt = "down arrow icon" class = "icon arrow1" onclick = "location.href = '#contact'">
+    </section>
+    <section id = "contact">
+        <p class = "section_text1">Get in Touch</p>
+        <h1 class = "section_text2">Contact Me</h1>
+        <div class = "contatc_info_upper_container">
+            <div class = "contact_info_container">
+                <img src = "email.png" alt = "email icon" class = "icon contact_icon email_icon">
+                <p><a href = "mailto:subnanigourav@gmail.com">Mail Me</a></p>
+            </div>
+            <div class = "contact_info_container">
+                <img src = "linkedin.png" alt = "LinkedIn Icon" class = "icon contact_icon">
+                <p><a href = "https://www.linkedin.com/in/gourav-subnani-9925b71b5/">Linked In</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class = "nav_links_container">
+                <ul class="nav_links">
+                    <li><a href = "#about">About</a></li>
+                    <li><a href = "#experience">Experience</a></li>
+                    <li><a href = "#projects">Projects</a></li>
+                    <li><a href = "#contact">Contact Me</a></li> 
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Gourav Subnani. All Rights Reserved</p>
+    </footer>
+    <script src = "script.js"></script>
+</body>
+</html>
