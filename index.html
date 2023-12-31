@@ -18,6 +18,15 @@
                 <li><a href = "#experience">Experience</a></li>
                 <li><a href = "#projects">Projects</a></li>
                 <li><a href = "#contact">Contact Me</a></li>
+                <li>
+                    <img 
+                    id = "mode_toggle"
+                    class = "icon darkmode_icon"
+                    src = "theme_light.png" 
+                    alt = "color theme icon"
+                    src-light = "theme_light.png"
+                    src-dark = "theme_dark.png">
+                </li>
             </ul>
         </div>
     </nav>
@@ -34,13 +43,22 @@
                 <li><a href = "#about" onclick = "toggleMenu()">About</a></li>
                 <li><a href = "#experience" onclick = "toggleMenu()">Experience</a></li>
                 <li><a href = "#projects" onclick = "toggleMenu()">Projects</a></li>
-                <li><a href = "#contact me" onclick = "toggleMenu()">Contact Me</a></li> 
+                <li><a href = "#contact me" onclick = "toggleMenu()">Contact Me</a></li>
+                <li>
+                    <img 
+                    id = "mode_toggle2"
+                    class = "icon darkmode_icon"
+                    src = "theme_light.png" 
+                    alt = "color theme icon"
+                    src-light = "theme_light.png"
+                    src-dark = "theme_dark.png">
+                </li> 
             </div>
         </div>
     </nav>
     <section id = "profile">
         <div class = "section_pic_container">
-            <img src = "moyemoye.jpg" alt = "Moye Moye">
+            <img src = "moyemoye.jpg" alt = "Moye Moye" class = "about_pic">
         </div>
         <div class = "section_text">
             <p class = "section_text1">Hello I'm</p>
@@ -55,15 +73,27 @@
                 </button>
             </div>
             <div id = "socials_container">
-                <img src = "linkedin.png" alt = "Linked profile" class = "icon"
+                <img src = "linkedin_light.png"
+                src-light = "linkedin_light.png" 
+                src-dark = "linkedin_dark.png" 
+                alt = "Linked profile" class = "icon"
                 onclick = "location.href = 'https://www.linkedin.com/in/gourav-subnani-9925b71b5/'">
-                <img src = "github.png" alt = "Github profile" class = "icon"
+                <img src = "github_light.png"
+                src-light =  "github_light.png" 
+                src-dark = "github_dark.png" 
+                alt = "Github profile" class = "icon"
                 onclick = "location.href = 'https://github.com/KNuckleeHEADD'">
             </div>
         </div>
     </section>
     <section id = "about">
-        <img src = "up-arrow.png" alt = "up arrow icon" class = "icon arrow2" onclick = "location.href = '#'">
+        <img 
+        src = "up_arrow_dark.png" 
+        src-light = "up_arrow_dark.png"
+        src-dark = "up_arrow_light.jpg"
+        alt = "up arrow icon"
+        class = "icon arrow2"
+        onclick = "location.href = '#'">
        <p class = "section_text1">Get to Know More</p>
        <h1 class = "section_text2">About Me</h1> 
        <div class = "section_container">
@@ -73,7 +103,10 @@
             <div class = "about_details_container">
                 <div class = "about_container">
                     <div class = "details_container d1">
-                        <img src = "experience.png" alt = "Experience icon" class = "icon">
+                        <img src = "experience_light.png" 
+                        src-light = "experience_light.png"
+                        src-dark = "experience_dark.png"
+                        alt = "Experience icon" class = "icon">
                         <h3>Experience</h3>
                         <p>0 years
                         <br>
@@ -81,7 +114,10 @@
                         </p>
                     </div>
                     <div class = "details_container">
-                        <img src = "education.png" alt = "Education icon" class = "icon">
+                        <img src = "education_light.png" 
+                        src-light = "education_light.png"
+                        src-dark = "experience_dark.png"
+                        alt = "Education icon" class = "icon">
                         <h3>Education</h3>
                         <p>Bachelors of Engineering
                         <br>
@@ -94,10 +130,16 @@
                 </div>
             </div>
        </div>
-       <img src = "arrow.png" alt = "down arrow icon" class = "icon arrow1" onclick = "location.href = '#experience'">
+       <img src = "arrow_light.png" 
+       src-light = "arrow_light.png"
+       src-dark = "arrow_dark.png" 
+       alt = "down arrow icon" class = "icon arrow1" 
+       onclick = "location.href = '#experience'">
     </section>
     <section id = "experience">
-        <img src = "up-arrow.png" alt = "up arrow icon" class = "icon arrow2" onclick = "location.href = '#about'">
+        <img src = "up_arrow_dark.png" 
+        src-light = "up_arrow_dark.png"
+        src-dark = "up_arrow_light.jpg" alt = "up arrow icon" class = "icon arrow2" onclick = "location.href = '#about'">
         <p class = "section_text1">Explore My</p>
         <h1 class = "section_text2">Experience</h1>
         <div class = "experience_details_container">
@@ -106,42 +148,60 @@
                     <h2 class = "experience_subtitle">Frontend Development</h2>
                     <div class = "article_container">
                         <article>
-                            <img src = "checkmark.png" alt = "Experience Icon" class = "icon">
+                            <img src = "checkmark_light.png"
+                            src-light = "checkmark_light.png"
+                            src-dark = "checkmark_dark.png"
+                            alt = "Experience Icon" class = "icon">
                             <div>
                                 <h3>HTML</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src = "checkmark.png" alt = "Experience Icon" class = "icon">
+                            <img src = "checkmark_light.png"
+                            src-light = "checkmark_light.png"
+                            src-dark = "checkmark_dark.png"
+                            alt = "Experience Icon" class = "icon">
                             <div>
                                 <h3>CSS</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src = "checkmark.png" alt = "Experience Icon" class = "icon">
+                            <img src = "checkmark_light.png"
+                            src-light = "checkmark_light.png"
+                            src-dark = "checkmark_dark.png"
+                            alt = "Experience Icon" class = "icon">
                             <div>
                                 <h3>JavaScript</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src = "checkmark.png" alt = "Experience Icon" class = "icon">
+                            <img src = "checkmark_light.png"
+                            src-light = "checkmark_light.png"
+                            src-dark = "checkmark_dark.png"
+                            alt = "Experience Icon" class = "icon">
                             <div>
                                 <h3>C++</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src = "checkmark.png" alt = "Experience Icon" class = "icon">
+                            <img src = "checkmark_light.png"
+                            src-light = "checkmark_light.png"
+                            src-dark = "checkmark_dark.png"
+                            alt = "Experience Icon" class = "icon">
                             <div>
                                 <h3>React JS</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src = "checkmark.png" alt = "Experience Icon" class = "icon">
+                            <img src = "checkmark_light.png"
+                            src-light = "checkmark_light.png"
+                            src-dark = "checkmark_dark.png"
+                            alt = "Experience Icon" class = "icon">
                             <div>
                                 <h3>NODE JS</h3>
                                 <p>Experienced</p>
@@ -153,28 +213,40 @@
                     <h2 class = "experience_subtitle">Frontend Development</h2>
                     <div class = "article_container">
                         <article>
-                            <img src = "checkmark.png" alt = "Experience Icon" class = "icon">
+                            <img src = "checkmark_light.png"
+                            src-light = "checkmark_light.png"
+                            src-dark = "checkmark_dark.png"
+                            alt = "Experience Icon" class = "icon">
                             <div>
                                 <h3>Express JS</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src = "checkmark.png" alt = "Experience Icon" class = "icon">
+                            <img src = "checkmark_light.png"
+                            src-light = "checkmark_light.png"
+                            src-dark = "checkmark_dark.png"
+                            alt = "Experience Icon" class = "icon">
                             <div>
                                 <h3>Github</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src = "checkmark.png" alt = "Experience Icon" class = "icon">
+                            <img src = "checkmark_light.png"
+                            src-light = "checkmark_light.png"
+                            src-dark = "checkmark_dark.png"
+                            alt = "Experience Icon" class = "icon">
                             <div>
                                 <h3>SASS</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src = "checkmark.png" alt = "Experience Icon" class = "icon">
+                            <img src = "checkmark_light.png"
+                            src-light = "checkmark_light.png"
+                            src-dark = "checkmark_dark.png"
+                            alt = "Experience Icon" class = "icon">
                             <div>
                                 <h3>Vue JS</h3>
                                 <p>Experienced</p>
@@ -184,10 +256,14 @@
                 </div>
             </div>
         </div>
-        <img src = "arrow.png" alt = "down arrow icon" class = "icon arrow1" onclick = "location.href = '#projects'">
+        <img src = "arrow_light.png" 
+        src-light = "arrow_light.png"
+        src-dark = "arrow_dark.png" alt = "down arrow icon" class = "icon arrow1" onclick = "location.href = '#projects'">
     </section>
     <section id = "projects">
-        <img src = "up-arrow.png" alt = "up arrow icon" class = "icon arrow2" onclick = "location.href = '#experience'">
+        <img src = "up_arrow_dark.png" 
+        src-light = "up_arrow_dark.png"
+        src-dark = "up_arrow_light.jpg" alt = "up arrow icon" class = "icon arrow2" onclick = "location.href = '#experience'">
         <p class = "section_text1">Browse My Recent</p>
         <h1 class = "section_text2">Projects</h1>
         <div class = "experience_details_container">
@@ -224,18 +300,24 @@
                 </div>
             </div>
         </div>
-        <img src = "arrow.png" alt = "down arrow icon" class = "icon arrow1" onclick = "location.href = '#contact'">
+        <img src = "arrow_light.png" 
+        src-light = "arrow_light.png"
+        src-dark = "arrow_dark.png" alt = "down arrow icon" class = "icon arrow1" onclick = "location.href = '#contact'">
     </section>
     <section id = "contact">
         <p class = "section_text1">Get in Touch</p>
         <h1 class = "section_text2">Contact Me</h1>
         <div class = "contatc_info_upper_container">
             <div class = "contact_info_container">
-                <img src = "email.png" alt = "email icon" class = "icon contact_icon email_icon">
+                <img src = "email_light.png"
+                src-light = "email_light.png"
+                src-dark = "email_dark.png"
+                alt = "email icon" class = "icon contact_icon email_icon">
                 <p><a href = "mailto:subnanigourav@gmail.com">Mail Me</a></p>
             </div>
             <div class = "contact_info_container">
-                <img src = "linkedin.png" alt = "LinkedIn Icon" class = "icon contact_icon">
+                <img src = "linkedin_light.png" alt = "LinkedIn Icon" class = "icon contact_icon" src-light = "linkedin_light.png" 
+                src-dark = "linkedin_dark.png">
                 <p><a href = "https://www.linkedin.com/in/gourav-subnani-9925b71b5/">Linked In</a></p>
             </div>
         </div>

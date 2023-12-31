@@ -1,13 +1,48 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+/* default light mode */
+:root{
+    --primary-color: white;
+    --primary-color-2: rgb(250 , 250 , 250);
+    --primary-color-2: rgb(181 , 181 , 181);
+    --background-color: rgb(255 , 255 , 255);
+    --secondary-color: black;
+    --secondary-color-2: rgb(85 , 85 , 85);
+    --button-background: rgb(53,53,53);
+    --button-text-hover: grey;
+    --button-border: rgb(53,53,53) 0.1rem solid;
+    --button-border-2: rgb(255 , 255 , 255) 0.1rem solid;
+    --container-border: rgb(163 , 163 , 163);
+}
+
+/* dark mode */
+
+[theme = "dark"]{
+    --primary-color: black;
+    --primary-color-2: rgb(39 , 39 , 39);
+    --primary-color-2: rgb(74 , 74 , 74);
+    --background-color: rgb(33 , 33 , 33);
+    --secondary-color: white;
+    --secondary-color-2: rgb(170 , 170 , 170);
+    --button-background: rgb(202,202,202);
+    --button-text-hover: lightgrey;
+    --button-border: rgb(202,202,202) 0.1rem solid;
+    --button-border-2: rgb(0 , 0 , 0) 0.1rem solid;
+    --container-border: rgb(92 , 92 , 92);
+}
 * {
     margin : 0;
     padding: 0;
 }
 
+h3{
+    color: var(--secondary-color);
+}
+
+
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
 }
 
 html{
@@ -22,13 +57,13 @@ a , .btn{
 
 nav , .nav_links{
     display: flex;
+    align-items: center;
     /* this is used to put the items in a flexbox so that they can be put side by side */
 }
 
 nav{
     justify-content: space-around;
     /* this property will basically give space around items */
-    align-items: center;
     height: 17vh;
     /* one whole page is consider as 100 view height(vh) , so first 18 vh is given to this nav and in this 18 it will be aligned at half */
 }
@@ -39,22 +74,36 @@ nav{
     font-size: 1.5rem;
 }
 
+nav li:last-child{
+    width: max-content;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+
+}
 a{
-    color: black;
+    color: var(--secondary-color);
     text-decoration: none;
-    text-decoration-color: white;
+    text-decoration-color: var(--primary-color);
 }
 
 a:hover{
-    color: grey;
     text-decoration: underline;
     font-size: smaller;
     transition: transform 3s smooth;
     text-underline-offset: 1rem;
+    text-decoration-color: var(--secondary-color)
+    /* transform: scale(1.5); */
+}
+
+nav a:hover{
+    color: var(--secondary-color);
+    text-decoration-color: var(--secondary-color);
     /* transform: scale(1.5); */
 }
 
 .logo{
+    color: var(--secondary-color);
     font-size: 2rem;
 }
 
@@ -84,7 +133,7 @@ a:hover{
 }
 
 .hamburger_icon span{
-    background-color: black;
+    background-color: var(--secondary-color);
     width: 100%;
     height: 2px;
     transition: all 0.3s ease-in-out;
@@ -94,7 +143,7 @@ a:hover{
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: white;
+    background-color: var(--primary-color);
     width: fit-content ; 
     max-height: 0;
     /* due to this max height we are able to hide the content of that drop down */
@@ -107,7 +156,7 @@ a:hover{
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
+    color: var(--secondary-color);
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
@@ -180,7 +229,7 @@ section{
 }
 
 p {
-    color: rgb(85, 85, 85);
+    color: var(--secondary-color-2)
 }
 
 .section_container{
@@ -198,7 +247,8 @@ p {
 }
 
 .section_text2{
-    font-size: 2.5rem;
+    color: var(--secondary-color);
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -231,7 +281,8 @@ p {
 }
 
 .one , .two{
-    border: rgb(53 , 53 , 53) 0.1rem solid;
+    border: var(--button-border);
+    color: var(--secondary-color-2);
 }
 
 .one:hover , .two:hover{
@@ -239,12 +290,12 @@ p {
 }
 
 .one:hover , .two{
-    background: rgb(53 , 53 , 53);
-    color: white;
+    background: var(--button-background);
+    color: var(--primary-color);
 }
 
 .two:hover{
-    background: rgb(0,0,0);
+    background: var(--secondary-color);
 }
 
 .one{
@@ -252,7 +303,8 @@ p {
 }
 
 .one:hover{
-    border: rgb(255,255,255) 0.1rem solid;
+    border: var(--button-border);
+    background: var(--secondary-color);
 }
 
 .btn_container{
@@ -288,10 +340,10 @@ p {
 .details_container{
     padding: 1.5rem;
     flex: 1;
-    background: white;
+    background: var(--primary-color-2);
     border-radius: 2rem;
-    border: rgb(53 , 53 , 53) 0.1rem solid;
-    border-color: rgb(163 , 163 , 163);
+    border: var(--button-border);
+    border-color: var(--container-border);
     text-align: center;
 }
 
@@ -327,7 +379,7 @@ p {
 }
 
 .experience_subtitle{
-    color: rgb(85 , 85 , 85);
+    color: var(--secondary-color);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
@@ -371,8 +423,8 @@ article .icon{
 
 .color_container{
     border-radius: 6rem;
-    border-color: rgb(163 , 163 , 163);
-    background: rgb(250 , 250 , 250);
+    border-color: var(--container-border);
+    background: var(--primary-color-2);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -383,12 +435,12 @@ article .icon{
 
 .project_subtitle{
     margin: 1rem;
-    color: black;
+    color: var(--secondary-color);
 }
 
 .project_btn{
-    color: black;
-    border-color: rgb(163 , 163 , 163);
+    color: var(--secondary-color);
+    border-color: var(--container-border);
 }
 
 #contact{
@@ -402,9 +454,9 @@ article .icon{
     display: flex;
     justify-content: center;
     border-radius: 2rem;
-    border: rgb(53 , 53 , 53) 0.1rem solid;
-    border-color: rgb(163 , 163 , 163);
-    background: (250,250,250);
+    border: var(--button-border);
+    border-color: var(--container-border);
+    background: var(--background-color);
     margin: 2rem auto;
     padding: 0.5rem;
     gap: 1rem;
